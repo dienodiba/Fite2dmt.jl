@@ -1,10 +1,19 @@
-# 2DMTINV
-Two-dimensional magnetotelluric inversion code
+# 2DIMTRE
+Two-Dimensional Inversion of Magnetotelluric data using Triangular Resistivity Elements
 
-Features:
-- triangular elements
-- regularized least squares objective function
-- model space Gauss-Newton algorithm
+## Features
+
+This code uses:
+- Node-based finite element formulation on triangular elements
+- Regularized least-squares objective function
+- Model space Gauss-Newton minimization algorithm
+- Reciprocity method for assembling the sensitivity matrix
+
+This code is able to invert:
+- apparent resistivity
+- phase
+- vertical magnetic field transfer function
+- inter-station horizontal magnetic field transfer function
 
 ## Example
 
