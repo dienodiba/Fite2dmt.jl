@@ -1,5 +1,5 @@
 % Dieno Diba 2022
-% Two dimensional magnetotelluric inversion
+% Part of 2DMTINV
 % TM Mode forward modeling
 
 function [ryx,pyx] = FwdTM(el2no,no2yz,rho,period,sta,topo)
