@@ -1,4 +1,4 @@
-% Dieno Diba 2021
+% Dieno Diba 2022
 % 2D finite element magnetotelluric inversion
 % Inversion
 
