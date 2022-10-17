@@ -8,5 +8,4 @@ Features:
 
 ## Example
 
-
-![ForGithub](https://user-images.githubusercontent.com/65894100/196221766-53c41fd8-ae71-43b7-bcaf-f8df89d91a19.png)
+![ForGithub](https://user-images.githubusercontent.com/65894100/196236640-85baaff2-f9d6-4a2f-b547-07a57d6d1342.png)
