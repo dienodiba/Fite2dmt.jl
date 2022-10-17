@@ -2,7 +2,7 @@
 UnStructured TRIangular Mesh Magnetotelluric Inversion
 
 ## Description
-USTRIM is a two-dimensional finite element magnetotelluric inversion code. The resistivity is discretized using unstructured mesh of triangular elements, so the topography or other irregular structures can be represented accurately.   
+USTRIM is a two-dimensional finite element magnetotelluric inversion code that supports unstructured mesh of triangular electrical resistivity elements. An advantage of the unstructured mesh is that the topography can be represented accurately, thus avoiding misinterpretation of the structure due to topographic effect. Also, the mesh around observation stations can be refined locally.
 
 ## Features
 
