@@ -2,7 +2,7 @@
 Magnetotelluric Inversion with Unstructured Triangular Mesh 
 
 ## Description
-MTri is a two-dimensional finite element magnetotelluric inversion code that supports unstructured mesh of triangular electrical resistivity elements. The unstructured mesh is very useful for dealing with complex geometries. Surface topography can be represented accurately so that misinterpretation due to the topographic effect can be avoided. Also, the mesh around observation stations, or wherever necessary, can be refined locally.
+MTri is a two-dimensional finite element magnetotelluric inversion code that supports an unstructured mesh of triangular electrical resistivity elements. The unstructured mesh is handy for dealing with complex geometries. For example, the undulation of surface topography can sometimes influence MT data. This topographic effect must be corrected by accurately modeling the topography in the modeling domain, or it leads to an incorrect interpretation of the structure. For that, the unstructured mesh is preferred over the simple structured mesh. Besides, the unstructured mesh can accommodate local refinement to improve modeling accuracy. Common in practice is the refinement of the elements surrounding observation stations.
 
 ## Features
 
