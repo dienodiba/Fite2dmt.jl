@@ -109,7 +109,7 @@ U(notp) = Utop * ones(length(notp),1);
 % - Left boundary
 U(nole) = BoundaryTE(role,period,zlef,Utop);
 % - Right boundary
-U(nori) = BoundaryTM(rori,period,zrig,Utop);
+U(nori) = BoundaryTE(rori,period,zrig,Utop);
 % - Bottom boundary
 U(nobt) = linspace(U(nole(end)),U(nori(end)),length(nobt));
 
