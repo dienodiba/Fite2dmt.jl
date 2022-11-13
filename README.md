@@ -9,15 +9,15 @@ FITE2DMT is a two-dimensional finite element magnetotelluric inversion code that
 The code implements:
 - Node-based finite element formulation for triangular element
 - Regularized least-squares objective function
-- Model space Gauss-Newton minimization algorithm
+- Data-space Gauss-Newton minimization algorithm
 - Reciprocity method for assembling the sensitivity matrix
 
 The code can invert:
 - apparent resistivity
 - phase
-- vertical magnetic field transfer function
+- vertical magnetic field transfer function (or Tipper)
 - inter-station horizontal magnetic field transfer function
 
 ## Example
 
-![ForGithub](https://user-images.githubusercontent.com/65894100/196236640-85baaff2-f9d6-4a2f-b547-07a57d6d1342.png)
+![ForGithub_2](https://user-images.githubusercontent.com/65894100/201507763-0807b98d-54d5-4545-abb7-6a51b1a88332.png)
