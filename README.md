@@ -27,3 +27,9 @@ The code can invert:
 Diba D, Nurhasan, Uyeshima M, Usui Y (2024) Two-dimensional magnetotelluric inversion using unstructured triangular mesh implemented in Julia. Journal of Physics: Conference Series, **2734** 012008. https://doi.org/10.1088/1742-6596/2734/1/012008
 
 Julia version of FITE2DMT will be released in the future.
+
+## Terms Of Use
+
+FITE2DMT is available for academic purposes only. It is intended for use in educational settings and should not be used for commercial or non-academic activties.
+
+Please cite the original documentation of FITE2DMT when publishing any work that uses this program. Proper citation acknowledges the authors' contributions and helps support further development.
