@@ -30,6 +30,6 @@ Julia version of FITE2DMT will be released in the future.
 
 ## Terms Of Use
 
-FITE2DMT is available for academic purposes only. It is intended for use in educational settings and should not be used for commercial or non-academic activties.
+FITE2DMT is available for academic purposes only. It is intended for use in educational settings and should not be used for commercial or non-academic activities.
 
 Please cite the original documentation of FITE2DMT when publishing any work that uses this program. Proper citation acknowledges the authors' contributions and helps support further development.
