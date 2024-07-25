@@ -2,7 +2,7 @@
 FInite Triangular Elements for Two-Dimensional MagnetoTelluric
 
 ## Description
-FITE2DMT is a two-dimensional finite element magnetotelluric inversion code that works for unstructured triangular electrical resistivity structures. The unstructured mesh is handy for dealing with complex geometries. For example, the undulation of surface topography can sometimes influence MT data. This topographic effect must be corrected by accurately modeling the topography, or otherwise it might lead to incorrect interpretations of the structure. In this situation, modelling with unstructured mesh is preferred over the simple structured mesh. Besides, the unstructured mesh can accommodate local refinement to improve modeling accuracy. Common in practice is the refinement of the elements surrounding observation stations.
+Fite2dmt.jl is a Julia module for two-dimensional magnetotelluric inversion that works for unstructured triangular meshes. The unstructured mesh is handy for dealing with complex geometries, such as the undulation of surface topography that can sometimes influence MT data. The effect of topography to the MT data can be reproduced by representing the topography accurately in the inversion using an unstructured mesh. In addition, the unstructured mesh can accommodate local refinement of grids at certain regions to improve modeling accuracy, such as around observation stations.
 
 ## Features
 
