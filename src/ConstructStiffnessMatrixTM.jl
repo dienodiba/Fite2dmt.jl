@@ -2,7 +2,7 @@
 # FITE2DMT
 # Construct stiffness matrix (FEM coefficient matrix) TM mode
 
-function ConstructStiffnessMatrixTM(nel_h::Integer, nno_h::Integer,  el2no_h::Matrix, no2yz_h::Matrix, rho_h::Matrix)
+function ConstructStiffnessMatrixTM(nel_h::Integer, nno_h::Integer,  el2no_h::Matrix, no2yz_h::Matrix, rho_h::Matrix, Area::Vector, eh2ee::Vector)
 
     Dh = zeros(ComplexF64,nno_h,nno_h)
     for ide = 1:nel_h
@@ -14,7 +14,7 @@ function ConstructStiffnessMatrixTM(nel_h::Integer, nno_h::Integer,  el2no_h::Ma
         s2_ide = yz_ide[1,:]-yz_ide[3,:]
         s3_ide = yz_ide[2,:]-yz_ide[1,:]
         # Area of the element ide
-        Ar_ide = abs(0.5 * (s2_ide[1]*s3_ide[2] - s2_ide[2]*s3_ide[1]))
+        Ar_ide = Area[eh2ee[ide]]
         # Gradient of test functions
         grad_phi1 = [-s1_ide[2],s1_ide[1]]/(2*Ar_ide)
         grad_phi2 = [-s2_ide[2],s2_ide[1]]/(2*Ar_ide)
