@@ -92,8 +92,8 @@ function InversionRhoaPhaseTipper(filedat::String, filem0::String, filetopo::Str
         dcalh = zeros(ComplexF64,nper,nst)
         Ahhg = zeros(ComplexF64,nper*nst,M)
 
-	    # Construct the stiffness matrix TM mode
-	    Dh = ConstructStiffnessMatrixTM(nel_h,nno_h,el2no_h,no2yz_h,rho_h)
+	# Construct the stiffness matrix TM mode
+	Dh = ConstructStiffnessMatrixTM(nel_h,nno_h,el2no_h,no2yz_h,rho_h,Area,eh2ee)
 
         tmpe = ComplexF64.(repeat(real.(De[diagind(De)]),1,nper))
         tmph = ComplexF64.(repeat(real.(Dh[diagind(Dh)]),1,nper))
