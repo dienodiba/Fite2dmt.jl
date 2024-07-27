@@ -60,7 +60,7 @@ function ReadInitialModel(filem0,fix_el,interp_topo)
 
     # For TM, remove elements and nodes in the air half-space
     rmel = []
-    eh2ee = zeros(Int64,nel,1)
+    eh2ee = zeros(Int64,nel)
     count = 0
     for ide = 1:nel
         tmp = no2yz[el2no[ide,:],:]
@@ -71,7 +71,7 @@ function ReadInitialModel(filem0,fix_el,interp_topo)
             eh2ee[count] = ide
         end
     end
-    eh2ee = eh2ee[(eh2ee[:,1] .!= 0),:]
+    eh2ee = eh2ee[(eh2ee[:] .!= 0)]
     syel = setdiff(1:nel,rmel)
     el2no_h = el2no[syel,:]
     rho_h = vec(rho[syel,:])
