@@ -5,8 +5,8 @@
 function ExportFinalModelResistivity(outroot::Any, nel::Integer, nno::Integer, el2no::Matrix, no2yz::Matrix, frho::Vector)
 
     fid = open(string(outroot,"_res.txt"),"w")
-    @printf(fid,"nel = %10i\n",nel)
-    @printf(fid,"nno = %10i\n\n",nno)
+    @printf(fid,"%i\n",nel)
+    @printf(fid,"%i\n\n",nno)
     @printf(fid,"EL2NO\n")
     for ide = 1:nel
         @printf(fid,"%12i%12i%12i\n",el2no[ide,1],el2no[ide,2],el2no[ide,3])
