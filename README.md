@@ -17,7 +17,18 @@ The code can invert:
 - phase
 - vertical magnetic field transfer function (or Tipper)
 
-## Example
+## Installation
+```Julia
+julia> using Pkg
+julia> Pkg.add("Fite2dmt")
+```
+
+## Usage
+```Julia
+julia> using Fite2dmt
+julia> Fite2dmt.InversionRhoaPhaseTipper("Model01_data_RhoaPhaseTipper.txt","Model01_m0.txt","Model01_topo.txt","Model01_setting_RhoaPhaseTipper.txt")
+```
+The user guide is available [here](https://github.com/dienodiba/Fite2dmt.jl/tree/main/manual)
 
 ![ForGithub_2](https://user-images.githubusercontent.com/65894100/201507763-0807b98d-54d5-4545-abb7-6a51b1a88332.png)
 
