@@ -1,7 +1,7 @@
 name = "Fite2dmt"
 uuid = "7622f6ca-2957-43dc-a3ab-f265e94f76f4"
 authors = ["Dieno Diba"]
-version = "1.0.0"
+version = "1.0.1"
 
 [deps]
 Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
