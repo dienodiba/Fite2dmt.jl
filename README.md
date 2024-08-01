@@ -20,7 +20,7 @@ The code can invert:
 ## Installation
 ```Julia
 julia> using Pkg
-julia> Pkg.add("Fite2dmt")
+julia> Pkg.add(url="https://github.com/dienodiba/Fite2dmt.jl")
 ```
 
 ## Usage
