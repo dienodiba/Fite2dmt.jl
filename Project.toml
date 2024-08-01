@@ -22,7 +22,7 @@ KLU = "^0.6.0"
 LinearInterpolations = "^0.1.6"
 MKL = "^0.7.0"
 StaticArrays = "^1.9.7"
-Statistics = "^1.11.1"
+Statistics = "^1.9.0"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
