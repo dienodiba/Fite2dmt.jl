@@ -2,22 +2,7 @@
 _Finite Triangular Elements for Two-Dimensional Magnetotelluric_
 
 ## Description
-Fite2dmt.jl is a Julia package for two-dimensional magnetotelluric inversion that works for unstructured triangular meshes. 
-
-The unstructured mesh is handy for dealing with complex geometries, such as the undulation of surface topography that can sometimes influence MT data. The effect of topography to the MT data can be reproduced by representing the topography accurately in the inversion using an unstructured mesh. In addition, the unstructured mesh can accommodate local refinement of grids at certain regions to improve modeling accuracy, such as around observation stations.
-
-## Features
-
-The code implements:
-- Node-based finite element formulation for triangular element
-- Regularized least-squares objective function
-- Data-space Gauss-Newton minimization algorithm
-- Reciprocity method for assembling the sensitivity matrix
-
-The code can invert:
-- apparent resistivity
-- phase
-- vertical magnetic field transfer function (or Tipper)
+Fite2dmt.jl is a Julia package for [FITE2DMT](https://dienodiba.com/FITE2DMT){:target="_blank"}. 
 
 ## Installation
 ```Julia
@@ -25,7 +10,7 @@ julia> using Pkg
 julia> Pkg.add(url="https://github.com/dienodiba/Fite2dmt.jl")
 ```
 
-## Usage
+## Example of usage
 ```Julia
 julia> using Fite2dmt
 julia> Fite2dmt.InversionRhoaPhaseTipper("Model01_data_RhoaPhaseTipper.txt","Model01_m0.txt","Model01_topo.txt","Model01_setting_RhoaPhaseTipper.txt")
