@@ -2,7 +2,7 @@
 _Finite Triangular Elements for Two-Dimensional Magnetotelluric_
 
 ## Description
-Fite2dmt.jl is a Julia package for [FITE2DMT](https://dienodiba.com/FITE2DMT){:target="_blank"}. 
+Fite2dmt.jl is a Julia package for [FITE2DMT](https://dienodiba.com/FITE2DMT). 
 
 ## Installation
 ```Julia
