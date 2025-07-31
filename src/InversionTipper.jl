@@ -168,7 +168,7 @@ function InversionTipper(filedat::String, filem0::String, filetopo::String, file
 
     t2 = time_ns()
 
-    println("Writing output files")
+    println("Writing output files ...")
     # Export Log File
     ExportLogFileTipper(outroot,filedat,filem0,filestg,filetopo,epoch,idd2,M,t1,t2,Phi,Psi,Stab,lambda,RMS,RMSd2,runtime)
     # Export the final model
@@ -176,6 +176,8 @@ function InversionTipper(filedat::String, filem0::String, filetopo::String, file
     #Export model responses
     ExportFinalModelTipper(outroot,nper,nst,sta,dpre,period,rtz_o,ert_o,itz_o,eit_o)
 
+    println("Finished")
+    
     return
 
 end
