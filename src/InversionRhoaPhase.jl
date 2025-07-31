@@ -208,13 +208,15 @@ function InversionRhoaPhase(filedat::String, filem0::String, filetopo::String, f
 
     t2 = time_ns()
 
-    println("Writing output files")
+    println("Writing output files ...")
     # Export Log File
     ExportLogFileRhoaPhase(outroot,filedat,filem0,filestg,filetopo,epoch,idd1,idd4,M,t1,t2,Phi,Psi,Stab,lambda,RMS,RMSd1,RMSd4,runtime)
     # Export the final model
     ExportFinalModelResistivity(outroot,nel,nno,el2no,no2yz,frho)
     #Export model responses
     ExportFinalModelRhoaPhase(outroot,nper,nst,sta,dpre,period,rhe_o,ere_o,phe_o,epe_o,rhh_o,erh_o,phh_o,eph_o)
+
+    println("Finished")
 
     return
 
