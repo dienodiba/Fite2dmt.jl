@@ -10,7 +10,7 @@ julia> Pkg.add(url="https://github.com/dienodiba/Fite2dmt.jl")
 ## Example of usage
 ```Julia
 julia> using Fite2dmt
-julia> Fite2dmt.InversionRhoaPhaseTipper("Model01_data_RhoaPhaseTipper.txt","Model01_m0.txt","Model01_topo.txt","Model01_setting_RhoaPhaseTipper.txt")
+julia> Fite2dmt.InversionRhoaPhaseTipper("Hill_data.txt","Hill_m0.txt","Hill_topo.txt","Hill_setting.txt")
 ```
 The user guide is available [here](https://github.com/dienodiba/Fite2dmt.jl/tree/main/manual)
 
