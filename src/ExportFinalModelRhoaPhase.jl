@@ -16,18 +16,22 @@ function ExportFinalModelRhoaPhase(outroot::Any, nper::Integer, nst::Integer, st
                 if idj == 1
                     rhe_c[idp,ids] = 10^(2*dpre[idN])
                     rhe_o[idp,ids] = 10^(rhe_o[idp,ids])
+                    ere_o[idp,ids] = ere_o[idp,ids]*log(10)*rhe_o[idp,ids]
                 end
                 if idj == 2
                     phe_c[idp,ids] = log(10)*dpre[idN]*180/pi
                     phe_o[idp,ids] = phe_o[idp,ids]*180/pi
+                    epe_o[idp,ids] = epe_o[idp,ids]*180/pi
                 end
                 if idj == 3
                     rhh_c[idp,ids] = 10^(2*dpre[idN])
                     rhh_o[idp,ids] = 10^(rhh_o[idp,ids])
+                    erh_o[idp,ids] = erh_o[idp,ids]*log(10)*rhh_o[idp,ids]
                 end
                 if idj == 4
                     phh_c[idp,ids] = log(10)*dpre[idN]*180/pi
                     phh_o[idp,ids] = phh_o[idp,ids]*180/pi
+                    eph_o[idp,ids] = eph_o[idp,ids]*180/pi
                 end
             end
         end
