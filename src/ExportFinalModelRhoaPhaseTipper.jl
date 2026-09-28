@@ -39,7 +39,7 @@ function ExportFinalModelRhoaPhaseTipper(outroot::Any, nper::Integer, nst::Integ
                 if idj == 6
                     phh_c[idp,ids] = log(10)*dpre[idN]*180/pi
                     phh_o[idp,ids] = phh_o[idp,ids]*180/pi
-                    eph_o[idp,ids] = epe_o[idp,ids]*180/pi
+                    eph_o[idp,ids] = eph_o[idp,ids]*180/pi
                 end
             end
         end
