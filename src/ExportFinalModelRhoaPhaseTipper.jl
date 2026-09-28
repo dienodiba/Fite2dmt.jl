@@ -18,6 +18,7 @@ function ExportFinalModelRhoaPhaseTipper(outroot::Any, nper::Integer, nst::Integ
                 if idj == 1
                     rhe_c[idp,ids] = 10^(2*dpre[idN])
                     rhe_o[idp,ids] = 10^(rhe_o[idp,ids])
+                    ere_o[idp,ids] = ere_o[idp,ids]*log(10)*log10(rhe_o[idp,ids])
                 end
                 if idj == 2
                     phe_c[idp,ids] = log(10)*dpre[idN]*180/pi
@@ -33,6 +34,7 @@ function ExportFinalModelRhoaPhaseTipper(outroot::Any, nper::Integer, nst::Integ
                 if idj == 5
                     rhh_c[idp,ids] = 10^(2*dpre[idN])
                     rhh_o[idp,ids] = 10^(rhh_o[idp,ids])
+                    erh_o[idp,ids] = erh_o[idp,ids]*log(10)*log10(rhh_o[idp,ids])
                 end
                 if idj == 6
                     phh_c[idp,ids] = log(10)*dpre[idN]*180/pi
